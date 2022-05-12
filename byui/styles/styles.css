@@ -1,9 +1,14 @@
 
 
 nav {
-    background-color: steelblue;
+    
     padding: 10px;
     text-align: center;
+}
+
+nav, footer {
+    background-color: steelblue;
+    color: white;
 }
 
 a {
@@ -31,8 +36,7 @@ p {
 }
 
 footer {
-    background-color: steelblue;
-    color: white;
+    
     text-align: center;
 }
 
@@ -41,7 +45,12 @@ footer {
     line-height: 1.5em;
 }
 
-#active {
+footer p {
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+a:hover {
     background-color: white;
     color: steelblue;
 }
