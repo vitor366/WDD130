@@ -1,0 +1,49 @@
+body {
+    background-color: pink;
+    
+}
+
+header {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.quote {
+    color: white;
+    text-align: center;
+    font-size: 1em;   
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+.list {
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+    
+}
+
+img {
+    max-width: 15%;
+    display: block;
+    margin: 0 auto;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+footer {
+    color: black;
+    text-align: center;
+}
+
+h1:hover {
+    color: black;
+}
