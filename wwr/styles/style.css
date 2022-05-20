@@ -1,3 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Source+Sans+Pro&display=swap');
+
+:root {
+    --heading-font: "Amatic SC";
+    --paragraph-font: Source Sans Pro, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #003049;
+    color: white;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+#logo-link img {
+    padding-top: 5px;
+}
+
+h2 {
+    margin: 0;
+}
+
+#hero h1,
+h4 {
+    text-align: center;
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -9,12 +38,14 @@
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 nav a {
     text-align: center;
     color: black;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -39,20 +70,30 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 #background {
     height: 725px;
     background-color: #fcbf49;
     color: white;
 }
 
-body {
-    background-color: #003049;
-    color: white;
-}
 
 header {
     background-color: #fcbf49;
     color: white;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #f3e7a2;
 }
 
 .book,
@@ -60,6 +101,10 @@ header {
     background-color: #fcbf49;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover,
@@ -68,13 +113,29 @@ header {
     color: white;
 }
 
+.mountains {
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
 .msg {
     background-color: #eae2b7;
+    line-height: 1.5em;
+    padding: 35px;
+}
+
+.msg p {
+    color: #003049;
+    font-size: 1.5em;
+    padding-bottom: 15px;
 }
 
 footer {
     background-color: #003049;
     color: white;
+    padding: 25px 50px;
+    margin-top: 20px;
 }
 
 footer h3 {
@@ -92,8 +153,15 @@ footer a:hover {
     text-decoration: underline;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 .home-title {
     color: #fcbf49;
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -104,6 +172,7 @@ h4 {
     color: #003049;
 }
 
-.msg p {
-    color: #003049;
+
+.home-grid h2 {
+    font-family: var(--heading-font);
 }
