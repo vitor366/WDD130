@@ -41,6 +41,9 @@ body {
 img {
   display: block;
   margin: 0 auto;
+  max-inline-size: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
