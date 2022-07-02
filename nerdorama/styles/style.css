@@ -1,3 +1,41 @@
-img {
-    max-inline-size: 50%;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500&family=Josefin+Sans:ital,wght@1,600&family=Kdam+Thmor+Pro&display=swap');
+
+:root {
+    --heading-font: Kdam Thmor Pro;
+  --paragraph-font: Josefin Sans, Helvetica, sans-serif;
+  --subtitle-font: Dancing Script;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a h1, h1 {
+    font-family: var(--heading-font);
+}
+
+a h2, h2 {
+    font-family: var(--subtitle-font);
+}
+
+a p, p {
+    font-family: var(--paragraph-font);
+}
+
+img {
+    max-inline-size: 100%;
+}
+
+#banner {
+    width: 100%;
+    height: 50px;
+}
+
+
+
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
