@@ -143,7 +143,11 @@ nav a:hover {
     padding-top: 35px;
 }
 
-
+#mouse-show-1 {
+    display: none;
+    position: absolute;
+    max-width: 30%;
+}
 
 .last-news {
     max-width: 80%;
