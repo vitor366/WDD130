@@ -49,11 +49,12 @@
 
             <section class="last-news">
                 <h1>Last News --></h1>
-                <a id="last-news-1" href="workingon.html" onmouseover="showMessage()" onmouseout="hideMessage()">
+                <a id="last-news-1" href="workingon.html">
 
                     <img class='last-news-img-1' src="images/tudoemtodoolugar.jpg"
                         alt="Everything Everywhere All At Once poster" />
-                    <h3 class="highline-1">From Jackass to Super Mario: Directors List Everything Everywhere All At Once References</h3>
+                    <h3 class="highline-1">From Jackass to Super Mario: Directors List Everything Everywhere All At Once
+                        References</h3>
                     <p id="mouse-show-1">The no-nonsense way of
                         talking about the film's inspirations is
                         part of the
@@ -111,71 +112,74 @@
                 </a>
             </section>
 
-            <section class="most-commented">
-                <h1>Most Commented --></h1>
-                <a id="most-commented-1" href="workingon.html">
+            <div class="middle-grid">
+                <section class="most-commented">
+                    <h1>Most Commented --></h1>
+                    <a id="most-commented-1" href="workingon.html">
 
-                    <img class='most-commented-img-1' src="images/dr-estranho (1).jpg"
-                        alt="Doctor Strange in The Multiverse of Madness" />
-                    <h2>Sam Raimi Confirms Character Death Was Cut From Doctor Strange In The Multiverse Of Madness</h2>
+                        <img class='most-commented-img-1' src="images/dr-estranho (1).jpg"
+                            alt="Doctor Strange in The Multiverse of Madness" />
+                        <h2>Sam Raimi Confirms Character Death Was Cut From Doctor Strange In The Multiverse Of Madness
+                        </h2>
 
-                </a>
+                    </a>
 
-                <a id="most-commented-2" href="workingon.html">
+                    <a id="most-commented-2" href="workingon.html">
 
-                    <img class='most-commented-img-2' src="images/theboys.jpg" alt="The Boys" />
-                    <h2>8 Times Marvel and DC Shocked More Than The Boys</h2>
+                        <img class='most-commented-img-2' src="images/theboys.jpg" alt="The Boys" />
+                        <h2>8 Times Marvel and DC Shocked More Than The Boys</h2>
 
-                </a>
+                    </a>
 
-                <a id="most-commented-3" href="workingon.html">
+                    <a id="most-commented-3" href="workingon.html">
 
-                    <img class='most-commented-img-3'
-                        src="images/john-krasinski-0c4928df-focus-min0.05-0.33-608-342.jpg"
-                        alt="John Krasinski as Reed Richards" />
-                    <h2>Fantastic Four: John Krasinski May Not Return As Reed Richards</h2>
+                        <img class='most-commented-img-3'
+                            src="images/john-krasinski-0c4928df-focus-min0.05-0.33-608-342.jpg"
+                            alt="John Krasinski as Reed Richards" />
+                        <h2>Fantastic Four: John Krasinski May Not Return As Reed Richards</h2>
 
-                </a>
+                    </a>
 
-                <a id="most-commented-4" href="workingon.html">
+                    <a id="most-commented-4" href="workingon.html">
 
-                    <img class='most-commented-img-4' src="images/theumbrellaacademy-serie-netflix-1 (1).jpg"
-                        alt="The Umbrella Academy" />
-                    <h2>The Umbrella Academy and its characters need to stop going around in circles</h2>
+                        <img class='most-commented-img-4' src="images/theumbrellaacademy-serie-netflix-1 (1).jpg"
+                            alt="The Umbrella Academy" />
+                        <h2>The Umbrella Academy and its characters need to stop going around in circles</h2>
 
-                </a>
-            </section>
+                    </a>
+                </section>
 
-            <section class="top-news">
-                <h1>Top News in:</h1>
-                <a id="top-movies" href="movies-series.html">
+                <section class="top-news">
+                    <h1>Top News in:</h1>
+                    <a class="top-movies" href="movies-series.html">
 
-                    <img class='top-movies-img' src="images/filmes_2022 (1).jpg" alt="Top News in Movies" />
-                    <h2>Movies</h2>
+                        <img class='top-movies-img' src="images/filmes_2022 (1).jpg" alt="Top News in Movies" />
+                        <h2>Movies</h2>
 
-                </a>
+                    </a>
 
-                <a id="top-series" href="movies-series.html">
+                    <a class="top-series" href="movies-series.html">
 
-                    <img class='top-series-img' src="images/series.jpg" alt="Top news in Series" />
-                    <h2>Series & TV</h2>
+                        <img class='top-series-img' src="images/series.jpg" alt="Top news in Series" />
+                        <h2>Series & TV</h2>
 
-                </a>
+                    </a>
 
-                <a id="top-videogames" href="workingon.html">
+                    <a id="top-videogames" href="workingon.html">
 
-                    <img class='top-videogames-img' src="images/videogames.jpg" alt="Top News in Videogames" />
-                    <h2>Videogames</h2>
+                        <img class='top-videogames-img' src="images/videogames.jpg" alt="Top News in Videogames" />
+                        <h2>Videogames</h2>
 
-                </a>
+                    </a>
 
-                <a id="top-comics" href="workingon.html">
+                    <a id="top-comics" href="workingon.html">
 
-                    <img class='top-comics-img' src="images/hqs.jpg" alt="Top News in Comics & Books" />
-                    <h2>Comics & Books</h2>
+                        <img class='top-comics-img' src="images/hqs.jpg" alt="Top News in Comics & Books" />
+                        <h2>Comics & Books</h2>
 
-                </a>
-            </section>
+                    </a>
+                </section>
+            </div>
 
             <section class="categories">
                 <h1>Categories --></h1>
@@ -253,16 +257,6 @@
         </footer>
     </div>
     <script>
-        let mensagem = document.querySelector("#mouse-show-1");
-
-        function showMessage() {
-            mensagem.style.display = "block";
-        }
-
-        function hideMessage() {
-            mensagem.style.display = "none";
-        }
-
         let mensagem2 = document.querySelector("#mouse-show-2");
 
         function showMessage2() {
