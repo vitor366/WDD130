@@ -492,7 +492,7 @@ footer #logo-link img {
 }
 
 .last-movie-news {
-    border-right: 5px solid var(--accent1-color);
+    border-right: 2px solid black;
 }
 .last-movie-news h1 {
     padding-left: 10px;
@@ -533,6 +533,7 @@ footer #logo-link img {
     float: left;
     padding: 5px;
     padding-top: 5px;
+    color: #ffb600;
 }
 
 .most-read h3 {
