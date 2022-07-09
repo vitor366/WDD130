@@ -488,7 +488,7 @@ footer #logo-link img {
     grid-template-columns: 60% 40%;
     background-color: white;
     margin-bottom: 15px;
-    
+    color: var(--accent1-color)
 }
 
 .last-movie-news {
@@ -563,4 +563,8 @@ footer #logo-link img {
 
 #most-read-4 h2 {
     margin-top: -5px;
+}
+
+.last-grid a {
+    color: #1b003d;
 }
