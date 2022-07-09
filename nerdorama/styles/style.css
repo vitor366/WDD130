@@ -11,6 +11,10 @@
     --accent2-color: #ad00cc;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -75,10 +79,10 @@ nav a:hover {
 nav a.active {
     background-color: var(--primary-color);
     color: white;
-  }
+}
 
 nav input[type=text] {
-    
+
     padding: 6px;
     border: none;
     margin-top: 8px;
@@ -118,15 +122,15 @@ nav input[type=text] {
     padding-top: 35px;
 }
 
-#mouse-show-1 {
-    display:inline;
+.mouse-show-1 {
+    display: inline;
     max-width: 100%;
     margin-top: 0;
     text-align: center;
     background-color: white;
 }
 
-#mouse-show-2 {
+.mouse-show-2 {
     display: none;
     position: absolute;
     max-width: 100%;
@@ -134,7 +138,7 @@ nav input[type=text] {
     background-color: white;
 }
 
-#mouse-show-3 {
+.mouse-show-3 {
     display: none;
     position: absolute;
     max-width: 100%;
@@ -142,7 +146,7 @@ nav input[type=text] {
     background-color: white;
 }
 
-#mouse-show-4 {
+.mouse-show-4 {
     display: none;
     position: absolute;
     max-width: 100%;
@@ -150,7 +154,15 @@ nav input[type=text] {
     background-color: white;
 }
 
-#mouse-show-5 {
+.mouse-show-5 {
+    display: none;
+    position: absolute;
+    max-width: 100%;
+    margin-top: 0;
+    background-color: white;
+}
+
+.mouse-show-6 {
     display: none;
     position: absolute;
     max-width: 100%;
@@ -280,7 +292,7 @@ nav input[type=text] {
 
 @media screen and (max-width: 700px) {
     .middle-grid {
-      flex-direction: column;
+        flex-direction: column;
     }
 }
 
@@ -290,15 +302,16 @@ nav input[type=text] {
     padding: 10px;
     color: var(--accent1-color);
     margin-bottom: 25px;
-    
+
 }
+
 .cards {
     display: flex;
     justify-content: space-around;
     align-items: center;
     max-inline-size: 90%;
     margin: 0 auto;
-    
+
 }
 
 .categories img:hover {
@@ -317,6 +330,7 @@ nav input[type=text] {
     text-align: left;
     padding-top: -5px;
 }
+
 .categories a {
     text-decoration: none;
     text-align: center;
@@ -337,7 +351,7 @@ footer {
 
 footer a {
     text-decoration: none;
-    color:gold
+    color: gold
 }
 
 
@@ -356,15 +370,196 @@ footer #logo-link img {
 
 
 @media screen and (max-width: 600px) {
-    nav a, nav input[type=text] {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
-    }
+
+    nav a,
     nav input[type=text] {
-      border: 1px solid #ccc;
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
     }
-  }
+
+    nav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+/*page 2 (movies & series)*/
+
+.movies-top-news {
+    background-color: white;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.movies-top-news h1 {
+    padding-left: 5px;
+}
+.news-card {
+    display: grid;
+    grid-template-columns: 2.5% 30% 2.5% 30% 2.5% 30% 2.5%;
+}
+.news-card img {
+    max-inline-size: 100%;
+}
+
+.news-card a {
+    text-decoration: none;
+    color: black;
+}
+#movies-top-news-1 {
+    grid-column: 2/3;
+}
+
+#movies-top-news-2 {
+    grid-column: 4/5;
+}
+
+#movies-top-news-3 {
+    grid-column: 6/7;
+}
+
+#movies-top-news-1:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+
+#movies-top-news-2:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+
+#movies-top-news-3:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+
+.last-reviews {
+    max-width: 100%;
+    background-color: rgb(39, 38, 38);
+    margin: 0 auto;
+}
+
+.last-reviews h1 {
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #ffb600;
+}
+
+.last-reviews h2 {
+    text-align: center;
+    transform: scale(0.8);
+    padding-top: 0;
+    margin-top: 0;
+    color: #ffb600;
+}
+.last-reviews div {
+    display: grid;
+    grid-template-columns: repeat(6, 16.6%);
+    padding: 5px;
+}   
+
+.last-reviews a {
+    text-decoration: none;
+}
+
+.last-reviews a:hover {
+    transform: scale(1.1);
+}
+.last-reviews img {
+    max-inline-size: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#movie-4 {
+    margin-top: 40px;
+}
+
+#movie-5 {
+    margin-top: 40px;
+}
+
+.last-grid {
+    display: grid;
+    max-width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 60% 40%;
+    background-color: white;
+    margin-bottom: 15px;
+    
+}
+
+.last-movie-news {
+    border-right: 5px solid var(--accent1-color);
+}
+.last-movie-news h1 {
+    padding-left: 10px;
+}
+
+.last-movie-news h2 {
+    padding: 10px;
+    
+}
+
+#last-movies-2 h2 {
+    margin-top: 50px;
+}
+
+#last-movies-3 h2 {
+    margin-top: 60px;
+}
+
+.last-movie-news a {
+    text-decoration: none;
+}
+
+.last-movie-news img {
+    float: left;
+    max-inline-size: 60%;
+    padding: 10px;
+}
+
+.most-read {
+    padding: 10px;
+}
+
+.most-read a {
+    text-decoration: none;
+}
+
+.most-read h2 {
+    float: left;
+    padding: 5px;
+    padding-top: 5px;
+}
+
+.most-read h3 {
+    text-align: left;
+}
+
+#most-read-1 h3 {
+    margin-top: 25px;
+}
+
+#most-read-1 h2 {
+    margin-top: -5px;
+}
+
+#most-read-2 h2 {
+    margin-left: 0;
+    margin-top: -5px;
+}
+
+#most-read-2 h3 {
+    margin-top: 20px;
+}
+
+#most-read-3 h2 {
+    margin-top: -5px;
+}
+
+#most-read-4 h2 {
+    margin-top: -5px;
+}
