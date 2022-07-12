@@ -320,7 +320,7 @@ nav input[type=text] {
 }
 
 .categories img {
-    max-block-size: 150px;
+    max-block-size: 180px;
     justify-items: center;
     border: 5px solid var(--accent2-color);
 }
@@ -395,6 +395,14 @@ footer #logo-link img {
 }
 .movies-top-news h1 {
     padding-left: 5px;
+}
+
+#mouse-show-1 {
+    display: none;
+    max-width: 100%;
+    margin-top: 0;
+    text-align: center;
+    background-color: white;
 }
 .news-card {
     display: grid;
