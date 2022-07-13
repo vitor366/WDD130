@@ -112,9 +112,19 @@ nav input[type=text] {
     grid-column: 3/4;
     grid-row: 2/3;
     color: white;
-
     text-align: center;
+}
 
+#welcome-msg3 {
+    grid-column: 2/5;
+    grid-row: 2/3;
+    color: white;
+    text-align: center;
+    margin-top: -50px;
+}
+
+#welcome-msg3 h2 {
+    font-family: var(--paragraph-font);
 }
 
 #welcome-msg h2 {
@@ -254,41 +264,106 @@ nav input[type=text] {
 }
 
 .middle-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+
 }
 
 .most-commented {
-    flex: 30%;
-    padding: 20px;
+    grid-column: 1/2;
     text-decoration: none;
     background-color: white;
-    margin-top: 20px;
 }
 
+.most-commented h1 {
+    padding-left: 5px;
+}
+
+.most-commented a {
+    padding: 5px;
+    text-decoration: none;
+}
 .most-commented img {
-    max-block-size: 100px;
+    max-width: 50%;
     float: left;
-}
-
-.most-commented-4 img {
-    margin-top: 50px;
+    padding: 5px;
 }
 
 .most-commented h3 {
-    max-width: 40%;
-    text-decoration: none;
+    font-family: var(--heading-font);
+    color: #ffb600;
+}
+
+
+#most-commented-1 h3 {
+    margin-top: -25px;
 }
 
 .top-news {
-    flex: 70%;
-    padding: 20px;
-    float: right;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 45% 45%;
+    background-color: rgb(51, 51, 51);
+
+}
+
+.top-news h1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-left: 5px;
+    color: #ffb600;
+}
+
+#top-movies {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#top-series {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#top-videogames {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#top-comics {
+    grid-column: 2/3;
+    grid-row: 3/4;
 }
 
 .top-news img {
-    max-block-size: 150px;
+    max-width: 100%;
+    margin-top: 20px;
+    border: 5px solid var(--accent2-color);
 }
+
+#top-comics {
+    margin-top: 12px;
+}
+
+.top-news a {
+    text-decoration: none;
+    padding: 10px;
+    
+}
+
+.top-news a:hover {
+    transform: scale(1.1);
+}
+
+.top-news h2 {
+    text-align: center;
+    color: #ffb600;
+    font-family: var(--subtitle-font);
+}
+
 
 @media screen and (max-width: 700px) {
     .middle-grid {
@@ -576,3 +651,43 @@ footer #logo-link img {
 .last-grid a {
     color: #1b003d;
 }
+
+
+/* Page 3 - podcasts */
+
+.videos-grid {
+    background-color: rgb(39, 38, 38);
+    margin-bottom: 25px;
+}
+
+.videos-grid h1 {
+    padding: 10px;
+    color: #ffb600;
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+.playlist-podcast {
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+}
+
+
+.playlist-podcast a {
+    text-decoration: none;
+    color: #ffb600;
+    padding: 20px;
+}
+
+.playlist-podcast a:hover {
+    background-color: rgba(22, 22, 22, 0.938);
+    transform: scale(1.2);
+}
+
+.playlist-podcast img {
+    border: 10px solid white;
+    max-width: 100%;
+}
+
