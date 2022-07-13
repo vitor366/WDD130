@@ -286,6 +286,7 @@ nav input[type=text] {
     padding: 5px;
     text-decoration: none;
 }
+
 .most-commented img {
     max-width: 50%;
     float: left;
@@ -351,7 +352,7 @@ nav input[type=text] {
 .top-news a {
     text-decoration: none;
     padding: 10px;
-    
+
 }
 
 .top-news a:hover {
@@ -468,6 +469,7 @@ footer #logo-link img {
     max-width: 80%;
     margin: 0 auto;
 }
+
 .movies-top-news h1 {
     padding-left: 5px;
 }
@@ -479,10 +481,12 @@ footer #logo-link img {
     text-align: center;
     background-color: white;
 }
+
 .news-card {
     display: grid;
     grid-template-columns: 2.5% 30% 2.5% 30% 2.5% 30% 2.5%;
 }
+
 .news-card img {
     max-inline-size: 100%;
 }
@@ -491,6 +495,7 @@ footer #logo-link img {
     text-decoration: none;
     color: black;
 }
+
 #movies-top-news-1 {
     grid-column: 2/3;
 }
@@ -537,11 +542,12 @@ footer #logo-link img {
     margin-top: 0;
     color: #ffb600;
 }
+
 .last-reviews div {
     display: grid;
     grid-template-columns: repeat(6, 16.6%);
     padding: 5px;
-}   
+}
 
 .last-reviews a {
     text-decoration: none;
@@ -550,6 +556,7 @@ footer #logo-link img {
 .last-reviews a:hover {
     transform: scale(1.1);
 }
+
 .last-reviews img {
     max-inline-size: 100%;
     padding-left: 15px;
@@ -577,13 +584,14 @@ footer #logo-link img {
 .last-movie-news {
     border-right: 2px solid black;
 }
+
 .last-movie-news h1 {
     padding-left: 10px;
 }
 
 .last-movie-news h2 {
     padding: 10px;
-    
+
 }
 
 #last-movies-2 h2 {
@@ -666,6 +674,7 @@ footer #logo-link img {
     padding-top: 30px;
     padding-bottom: 0;
 }
+
 .playlist-podcast {
     max-width: 90%;
     margin: 0 auto;
@@ -690,4 +699,3 @@ footer #logo-link img {
     border: 10px solid white;
     max-width: 100%;
 }
-
